@@ -29,8 +29,12 @@ isolation: isolate;
 /* End of CSS Reset */
 
 * {
-    font-family: 'PT Serif', 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
+
+/* * {
+    font-family: Arial, Helvetica, sans-serif;
+} */
 
 .hide {
     display: none;
@@ -41,30 +45,6 @@ html {
     background-color: white;
     color: black;
 }
-
-@media print {
-    html {
-        font-size: 10pt;
-        margin: 0;
-    }
-
-    @page { 
-        margin: 2cm 
-    }
-
-    #bottom-nav {
-        display: none;
-    }
-}
-
-a {
-    color: inherit;
-}
-
-a:hover {
-    color: blue;
-}
-
 main {
     padding: 5%;
 }
@@ -78,9 +58,38 @@ main {
     }
 }
 
+@media print {
+
+    .hide-in-print {
+        display: none;
+    }
+
+    html {
+        font-size: 10pt;
+        margin: 0;
+    }
+    
+    @page { 
+        margin: 2cm 
+    }
+
+    main {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: blue;
+}
+ 
 header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -89,25 +98,26 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 h3 {
     font-size: 1.2rem;
 }
 
-p {
+p, ul, li {
     orphans: 3;
+    widows: 2;
 }
 
 article {
     text-align: left;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem;
 }
 
 article h2 {
     border-bottom: 0.2rem solid black;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
 }
 
 section {
