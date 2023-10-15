@@ -9,7 +9,7 @@
 margin: 0;
 }
 body {
-line-height: 1.5;
+line-height: 1.0;
 -webkit-font-smoothing: antialiased;
 }
 img, picture, video, canvas, svg {
@@ -26,22 +26,21 @@ overflow-wrap: break-word;
 isolation: isolate;
 }
 
-/* End of CSS Reset */
+/* * {
+    font-family: 'Times New Roman', Times, serif;
+} */
 
 * {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-/* * {
     font-family: Arial, Helvetica, sans-serif;
-} */
+}
 
 .hide {
     display: none;
 }
 
+
 html {
-    font-size: 16px;
+    font-size: 13px;
     background-color: white;
     color: black;
 }
@@ -70,7 +69,7 @@ main {
     }
     
     @page { 
-        margin: 2cm 
+        margin: 1cm 
     }
 
     main {
@@ -86,44 +85,28 @@ a {
 a:hover {
     color: blue;
 }
- 
-header {
-    text-align: center;
-    margin-bottom: 0.5rem;
-}
 
-h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
+.two-column-grid {
+    display : grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    align-content: end;
+    align-items: end;
 }
-
-h2 {
-    font-size: 1.5rem;
-}
-
-h3 {
-    font-size: 1.2rem;
-}
-
-p, ul, li {
-    orphans: 3;
-    widows: 2;
-}
-
-article {
-    text-align: left;
-    margin-bottom: 0.8rem;
-}
-
 article h2 {
-    border-bottom: 0.2rem solid black;
-    margin-bottom: 0.2rem;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 8px;
 }
 
-section {
-    margin-bottom: 0.5rem;
+article section {
+    margin-bottom: 5px;
 }
 
-ul {
-    padding-left: 1rem;
+.exp section .employer {
+    margin-bottom: 3px;
+}
+
+.exp section .employer .loc {
+    justify-self: end;
 }
