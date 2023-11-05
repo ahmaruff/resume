@@ -94,6 +94,17 @@ a:hover {
     align-content: end;
     align-items: end;
 }
+
+@media screen and (max-width: 576px) {
+    .two-column-grid {
+        display : grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr;
+        justify-content: space-between;
+        align-content: start;
+        align-items: start;
+    }
+}
 article h2 {
     border-bottom: 1px solid #000000;
     margin-bottom: 8px;
