@@ -95,16 +95,29 @@ a:hover {
     align-items: end;
 }
 
+.company-desc {
+    margin-left: 2px;
+}
+
 @media screen and (max-width: 576px) {
     .two-column-grid {
         display : grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: 1fr;
-        justify-content: space-between;
-        align-content: start;
-        align-items: start;
+        grid-template-columns: 100%;
+    }
+
+    .exp section .employer .loc {
+        width: 100%;
+        justify-self: start;
+    }
+
+    .company-desc {
+        margin-left: 0;
+    }
+    .hide-on-mobile {
+        display: none;
     }
 }
+
 article h2 {
     border-bottom: 1px solid #000000;
     margin-bottom: 8px;
