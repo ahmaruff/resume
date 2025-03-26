@@ -9,7 +9,7 @@
 margin: 0;
 }
 body {
-line-height: 1.0;
+line-height: 1.2;
 -webkit-font-smoothing: antialiased;
 }
 img, picture, video, canvas, svg {
@@ -40,7 +40,7 @@ isolation: isolate;
 
 
 html {
-    font-size: 13px;
+    font-size: 10pt;
     background-color: white;
     color: black;
 }
