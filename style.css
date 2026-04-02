@@ -134,3 +134,7 @@ article section {
 .exp section .employer .loc {
     justify-self: end;
 }
+
+.ml-1r {
+    margin-left: 1.5rem;
+}
