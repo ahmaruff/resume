@@ -76,6 +76,22 @@ main {
         padding: 0;
         margin: 0;
     }
+
+    article h2 {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
+    article section {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        margin-bottom: 10px;
+    }
+
+    p, li {
+        orphans: 3;
+        widows: 3;
+    }
 }
 
 a {
