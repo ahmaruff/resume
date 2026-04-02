@@ -42,6 +42,8 @@ If you want to edit or use this resume, follow these steps:
 4. Save the changes and preview the result in a browser.
 5. To share it online, you can use GitHub Pages or other hosting services.
 
+> **Pro-Tip for Printing:** When printing to PDF, use the browser's native **"Save as PDF"** destination instead of "Microsoft Print to PDF." This ensures the text remains selectable and searchable for AI/ATS systems.
+
 ## Contact
 If you wish to contact me, email me at [ahmadmaruf2701@gmail.com](mailto:ahmadmaruf2701@gmail.com)
 
